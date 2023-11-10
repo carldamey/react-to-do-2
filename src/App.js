@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>React To-Dos</h1>
-      <button onClick={setShowTodos(!showTodos)}>
+      <button onClick={() => setShowTodos(!showTodos)}>
         {showTodos ? "HIDE" : "SHOW"}
       </button>
       <ToDoList todos={todos} />
