@@ -8,17 +8,7 @@ export default function ToDoListItem({ todo, index }) {
         backgroundColor: index % 2 ? "lightgreen" : "orange",
       }}
     >
-      <span
-        style={{
-          backgoundColor: "red",
-          color: "white",
-          borderRadius: "50%",
-          paddingRight: "3rem",
-          alignSelf: "flex-end",
-        }}
-      >
-        {index + 1}
-      </span>
+      <div className="flex-ctr-ctr">{index + 1}</div>
       {todo}
     </li>
   );

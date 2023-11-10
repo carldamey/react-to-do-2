@@ -5,4 +5,15 @@
   border: 1vmin solid purple;
   list-style: none;
   font-size: 6vmin;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ToDoListItem > div {
+  width: 8vmin;
+  height: 8vmin;
+  margin-right: 4vmin;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
 }
