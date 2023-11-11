@@ -2,6 +2,10 @@ import { useState } from "react";
 
 export default function NewToDoForm({ todos, setTodos }) {
   const [newTodo, setNewTodo] = useState("");
+  function handleAddTodo() {
+    setTodos([...todos, newTodo]);
+    setNewTodo("");
+  }
   return (
     <>
       <h2>New To-Do</h2>
@@ -10,14 +14,7 @@ export default function NewToDoForm({ todos, setTodos }) {
         onChange={(evt) => setNewTodo(evt.target.value)}
         placeholder="New To-Do"
       />
-      <button
-        onClick={() => {
-          setTodos(newTodo);
-          setNewTodo("");
-        }}
-      >
-        ADD TO-DO
-      </button>
+      <button onClick={handleAddTodo}>ADD TO-DO</button>
     </>
   );
 }
