@@ -1,4 +1,5 @@
 import ToDoList from "./ToDoList";
+import NewToDoForm from "./NewToDoForm";
 import "./styles.css";
 import { useState } from "react";
 
@@ -16,6 +17,8 @@ export default function App() {
         {showTodos ? "HIDE" : "SHOW"}
       </button>
       <ToDoList todos={todos} />
+      <hr />
+      <NewToDoForm todos={todos} setTodos={setTodos} />
     </div>
   );
 }
