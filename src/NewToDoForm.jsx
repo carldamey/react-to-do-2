@@ -15,7 +15,7 @@ export default function NewToDoForm({ todos, setTodos }) {
         onChange={(evt) => setNewTodo(evt.target.value)}
         placeholder="New To-Do"
         required
-        pattern=".{4}"
+        pattern=".{4,}"
       />
       <button type="submit">ADD TO-DO</button>
     </form>
